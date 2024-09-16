@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # Allow manual triggering
 
 env:
-  DOCKER_IMAGE: your-dockerhub-username/github-actions-test
+  DOCKER_IMAGE: mariogalansoto/github-actions-test
   TEST_ENV: localhost
   PROD_ENV: localhost
 
