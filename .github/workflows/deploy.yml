@@ -68,4 +68,5 @@ jobs:
           git config user.email github-actions@github.com
           git add .current_version
           git commit -m "Update to version ${{ needs.check-for-updates.outputs.new_version }}"
-          git push
+          git push https://x-access-token:${{ secrets.PAT_TOKEN }}@github.com/MarioGalanSoto/github-actions-test.git HEAD:main
+
